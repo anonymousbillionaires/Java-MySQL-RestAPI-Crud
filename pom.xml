@@ -9,11 +9,11 @@
 		<version>3.0.1</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>dev.patricksilva</groupId>
-	<artifactId>crud</artifactId>
+	<groupId>crudrestapi.crudrestapi</groupId>
+	<artifactId>crudrestapi.crudrestapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>crud</name>
-	<description>Demo project for Spring Boot</description>
+	<name>crudrestapi.crudrestapi</name>
+	<description>Java RestAPI MySQL Crud</description>
 	<properties>
 		<java.version>19</java.version>
 	</properties>
