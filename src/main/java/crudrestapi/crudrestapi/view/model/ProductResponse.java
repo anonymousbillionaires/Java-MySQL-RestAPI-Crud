@@ -3,9 +3,15 @@ package crudrestapi.crudrestapi.view.model;
 public class ProductResponse {
     private Integer id;
     private String name;
-    private Integer quantity;
+    private String ribbon;
+    private String description;
     private Double price;
-    private String observation;
+    private Double salePrice;
+
+    private Integer sku;
+    private Integer quantity;
+    private String category;
+    private Boolean salesCategory;
 
     // #region Getters and Setters
     public int getId() {
@@ -24,12 +30,20 @@ public class ProductResponse {
         this.name = name;
     }
 
-    public Integer getQuantity() {
-        return quantity;
+    public String getRibbon() {
+        return ribbon;
     }
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
+    public void setRibbon(String ribbon) {
+        this.ribbon = ribbon;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Double getPrice() {
@@ -40,12 +54,43 @@ public class ProductResponse {
         this.price = price;
     }
 
-    public String getObservation() {
-        return observation;
+    public Double getSalePrice() {
+        return salePrice;
     }
 
-    public void setObservation(String observation) {
-        this.observation = observation;
+    public void setSalePrice(Double salePrice) {
+        this.salePrice = salePrice;
     }
-    // #endregion
+
+    public Integer getSku() {
+        return sku;
+    }
+
+    public void setSku(Integer sku) {
+        this.sku = sku;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Boolean getSalesCategory() {
+        return salesCategory;
+    }
+
+    public void setSalesCategory(Boolean salesCategory) {
+        this.salesCategory = salesCategory;
+    }
 }

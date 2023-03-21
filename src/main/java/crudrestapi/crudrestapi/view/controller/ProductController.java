@@ -46,7 +46,7 @@ public class ProductController {
         return new ResponseEntity<>(Optional.of(product), HttpStatus.OK);
     }
 
-    @PostMapping
+    @PostMapping()
     @CrossOrigin(origins = "*")
     public ResponseEntity<ProductResponse> addProduct(@RequestBody ProductRequest productRequest) {
 

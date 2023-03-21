@@ -3,22 +3,16 @@ package crudrestapi.crudrestapi.shared;
 public class ProductDTO {
     private Integer id;
     private String name;
-    private Integer quantity;
+    private String ribbon;
+    private String description;
     private Double price;
-    private String observation;
+    private Double salePrice;
 
-    @Override
-    public String toString() {
-        return "ProductDTO{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", quantity=" + quantity +
-                ", price=" + price +
-                ", observation='" + observation + '\'' +
-                '}';
-    }
+    private Integer sku;
+    private Integer quantity;
+    private String category;
+    private Boolean salesCategory;
 
-    // #region Getters and Setters
     public Integer getId() {
         return id;
     }
@@ -35,12 +29,20 @@ public class ProductDTO {
         this.name = name;
     }
 
-    public Integer getQuantity() {
-        return quantity;
+    public String getRibbon() {
+        return ribbon;
     }
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
+    public void setRibbon(String ribbon) {
+        this.ribbon = ribbon;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Double getPrice() {
@@ -51,12 +53,59 @@ public class ProductDTO {
         this.price = price;
     }
 
-    public String getObservation() {
-        return observation;
+    public Double getSalePrice() {
+        return salePrice;
     }
 
-    public void setObservation(String observation) {
-        this.observation = observation;
+    public void setSalePrice(Double salePrice) {
+        this.salePrice = salePrice;
     }
-    // #endregion
+
+    public Integer getSku() {
+        return sku;
+    }
+
+    public void setSku(Integer sku) {
+        this.sku = sku;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Boolean getSalesCategory() {
+        return salesCategory;
+    }
+
+    @Override
+    public String toString() {
+        return "ProductDTO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", ribbon='" + ribbon + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", salePrice=" + salePrice +
+                ", sku=" + sku +
+                ", quantity=" + quantity +
+                ", category='" + category + '\'' +
+                ", salesCategory=" + salesCategory +
+                '}';
+    }
+
+    public void setSalesCategory(Boolean salesCategory) {
+        this.salesCategory = salesCategory;
+    }
 }
